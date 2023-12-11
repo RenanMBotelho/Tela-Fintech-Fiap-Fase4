@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-1: #0B3B3C;
+    --color-2: #fff;
+    --color-3: #000;
+}
+
+body {
+    background-color: var(--color-1);
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-title h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 15vmin;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.container-image img {
+    width: 80vw;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.box-form-item {
+    position: relative;
+}
+
+.icon-email, .icon-password {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 200%;
+}
+
+.icon-password {
+    transform: translateY(-60%);
+}
+
+.email-input, .password-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    max-width: 500px;
+    height: 35px;
+    min-height: 30px;
+    margin-bottom: 3%;
+    padding: 10px;
+}
+
+.box-form-item ::placeholder {
+    font-size: 150%;
+    text-align: center;
+    color: var(--color-3);
+    font-weight: 900;
+}
+
+.container-secundary {
+    font-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reset-password {
+    color: var(--color-2);
+    text-decoration: none;
+}
+
+.box-form-button {
+    width: 100%;
+    text-align: center;
+    margin: 5% 0;
+}
+
+.btn-login {
+    font-weight: 900;
+    color: var(--color-2);
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.reset-password:hover, .box-form-button h2:hover {
+    font-weight: 900;
+}
+
+footer a {
+    color: var(--color-2);
+    text-decoration: none;
+    font-weight: 900;
+    display: block;
+}
+
+@media(max-width: 500px) {
+    .email-input, .password-input {
+        height: 20px;
+    }
+}
+
+@media(max-width: 500px) {
+    .icon-email, .icon-password {
+        font-size: 150%;
+    }
+}
+
+@media(max-width: 500px) {
+    .container-secundary {
+        font-size: 80%;
+    }
+}
+
+@media(max-width: 500px) {
+    .box-form-item ::placeholder {
+        font-size: 100%;
+    }
+}
